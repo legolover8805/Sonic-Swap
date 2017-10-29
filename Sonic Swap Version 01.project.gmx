@@ -151,6 +151,7 @@
           <sprite>sprites\sprS2TailsTail01</sprite>
           <sprite>sprites\sprS2TailsTailRoll</sprite>
           <sprite>sprites\sprS2TailsWalk</sprite>
+          <sprite>sprites\sprS2TailsJog</sprite>
           <sprite>sprites\sprS2TailsHurt</sprite>
           <sprite>sprites\sprS2TailsLookUp</sprite>
           <sprite>sprites\sprS2TailsLookDown</sprite>

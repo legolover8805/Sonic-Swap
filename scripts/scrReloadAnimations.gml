@@ -98,7 +98,7 @@
         scrAnimationSystemAddSimple("Dead", 0, sprS2TailsDead);
     
         scrAnimationSystemAddSimple("Walking", 0.125, sprS2TailsWalk);
-        scrAnimationSystemAddSimple("Jogging", 0.125, sprS2TailsWalk);
+        scrAnimationSystemAddSimple("Jogging", 0.3, sprS2TailsJog);
         scrAnimationSystemAdd("Running", 0.125, sprS2TailsRun, 4);
         scrAnimationSystemAddSimple("MovePeelOut", 0.125, sprS2TailsDash);
     
