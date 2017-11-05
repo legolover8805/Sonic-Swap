@@ -25,6 +25,7 @@
             case 2:
                 ShieldAction = true;
                 Speed        = 0;
+                Action       = ActionBounce;
                 Gravity      = 8;
                 audio_play_sound(sndShieldActionBubble, 1, false);
                 break;

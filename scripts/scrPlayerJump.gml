@@ -9,7 +9,7 @@
         JumpVariable    = true;
         Action          = ActionJumping;
         
-        audio_play_sound(sndPlayerJump, 1, false);
+
         
         Angle       = 0;
         FloorAngle  = 0;

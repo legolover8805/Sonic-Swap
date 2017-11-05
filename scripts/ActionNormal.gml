@@ -23,6 +23,7 @@
     // - Jumping -------
         }else if(KeyAPressed && Ground == true){
             scrPlayerJump();
+            audio_play_sound(sndPlayerJump, 1, false);
     
     // - Slow Down From Jog ---
    
@@ -58,5 +59,6 @@
             JumpAnimSpeed  = 1/max((5-abs(Speed)), 1);
            // audio_play_sound(sndShieldInstashield, 1, false);
             JumpVariable = 0;
-    
-        }
+    }
+
+        

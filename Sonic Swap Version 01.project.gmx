@@ -296,6 +296,7 @@
           <sprite>sprites\sprWaterHorizon</sprite>
           <sprite>sprites\sprWaterCountdown</sprite>
           <sprite>sprites\sprWaterBG</sprite>
+          <sprite>sprites\sprWaterWave</sprite>
         </sprites>
         <sprites name="Pipes">
           <sprite>sprites\sprPipe</sprite>
@@ -897,6 +898,7 @@
         <script>scripts\ActionSpring.gml</script>
         <script>scripts\ActionSpindash.gml</script>
         <script>scripts\ActionDropDash.gml</script>
+        <script>scripts\ActionBounce.gml</script>
         <script>scripts\ActionSkid.gml</script>
         <script>scripts\ActionPush.gml</script>
         <script>scripts\ActionHurt.gml</script>
@@ -918,6 +920,7 @@
         <script>scripts\ActionSlide.gml</script>
         <script>scripts\ActionOuttaHere.gml</script>
         <script>scripts\ActionDebug.gml</script>
+        <script>scripts\ActionWaterRun.gml</script>
       </scripts>
       <scripts name="Animation_System">
         <script>scripts\scrAnimationSystemAddRepeat.gml</script>
@@ -1170,6 +1173,7 @@
           <object>objects\objBubbleSpawn</object>
           <object>objects\objBubble</object>
           <object>objects\objWaterBG</object>
+          <object>objects\objWave</object>
         </objects>
         <objects name="Gimmicks">
           <objects name="Presets">
@@ -1565,6 +1569,8 @@
     <room>rooms\roomGreenHill1</room>
     <room>rooms\roomEmeraldHill1</room>
     <room>rooms\roomTestLevel2</room>
+    <room>rooms\roomTestWater</room>
+    <room>rooms\roomWaterWalk</room>
     <room>rooms\roomEndlessTest</room>
     <room>rooms\roomLevelSelect</room>
     <room>rooms\roomCollisionCheck</room>

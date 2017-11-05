@@ -414,12 +414,14 @@
     scrParallaxAddBG(sprGHZBG02, 8, 0.05, 0.9, 4);
     
     global.DebugMode    = false;
+    global.WaterRun     = 0;
     
     global.LevelList    = ds_list_create();
     ds_list_add(global.LevelList, roomTestLevel);
     ds_list_add(global.LevelList, roomGreenHill1);
     ds_list_add(global.LevelList, roomEmeraldHill1);
     ds_list_add(global.LevelList, roomTestLevel2);
+    ds_list_add(global.LevelList, roomWaterWalk);
    // ds_list_add(global.LevelList, roomCredits);
     
     global.LevelNames    = ds_map_create();
@@ -428,6 +430,7 @@
     ds_map_add(global.LevelNames, roomTestLevel2, "GENERIC TEST DOS");
     ds_map_add(global.LevelNames, roomEmeraldHill1, "EMERALD HILL");
     ds_map_add(global.LevelNames, roomEndlessTest, "ENDLESS TEST");
+    ds_map_add(global.LevelNames, roomWaterWalk, "WATER TEST");
     
     global.LevelActs    = ds_map_create();
     ds_map_add(global.LevelActs, roomTestLevel, 1);
@@ -435,6 +438,7 @@
     ds_map_add(global.LevelActs, roomEmeraldHill1, 1);
     ds_map_add(global.LevelActs, roomGreenHill1, 1);
     ds_map_add(global.LevelActs, roomEndlessTest, 1);    
+    ds_map_add(global.LevelActs, roomWaterWalk, 1);
 
     globalvar LvlMusic;
     LvlMusic = ds_map_create();
@@ -443,6 +447,7 @@
     ds_map_add(LvlMusic, roomEmeraldHill1, sndEmeraldHill);
     ds_map_add(LvlMusic, roomGreenHill1, sndGreenHillZone);
     ds_map_add(LvlMusic, roomEndlessTest, sndEmeraldHill);
+    ds_map_add(LvlMusic, roomWaterWalk, sndGreenHillZone);
 
     globalvar LvlAnimals;
     LvlAnimals = ds_map_create();
@@ -451,6 +456,7 @@
     ds_map_add(LvlAnimals, roomTestLevel2, 1);
     ds_map_add(LvlAnimals, roomEmeraldHill1, 0);
     ds_map_add(LvlAnimals, roomEndlessTest, 1);
+    ds_map_add(LvlAnimals, roomWaterWalk, 2);
 
 
     // Emerald Hill Zone

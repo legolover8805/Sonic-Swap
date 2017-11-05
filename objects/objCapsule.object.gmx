@@ -45,7 +45,11 @@
     Alarm        = 29;
     LockX        = x;
     LockY        = y+1;
-    instance_create(x, y-16, objCapsuleSwitch);
+    if (image_yscale == 1){
+        instance_create(x, y-16, objCapsuleSwitch);
+    } if (image_yscale == -1) {
+        instance_create(x, y+16, objCapsuleSwitch);
+    }
     List     = ds_map_find_value(LvlAnimals, room);
     ListMax  = array_length_2d(global.AnimalList, List)-1;
 </string>
@@ -150,10 +154,20 @@
             <kind>1</kind>
             <string>
     draw_sprite(sprCapsuleTop, 0, x, y);
-    if(DoorHeight &gt; 0)
-        draw_sprite(sprCapsuleClosed, 0, x, y+16);
-    else
-        draw_sprite(sprCapsuleOpen, 0, x, y+16);
+    if(DoorHeight &gt; 0) {
+        if (image_yscale == 1){
+            draw_sprite(sprCapsuleClosed, 0, x, y+16);
+        } if (image_yscale == -1) {
+            draw_sprite(sprCapsuleClosed, 0, x, y-16);
+        }
+    }
+    else {
+        if (image_yscale == 1){
+            draw_sprite(sprCapsuleOpen, 0, x, y+16);
+        } if (image_yscale == -1) {
+            draw_sprite(sprCapsuleOpen, 0, x, y-16);
+        }
+    }
     draw_sprite_part(sprCapsuleDoor, 0, 0, 0, 24, ceil(DoorHeight), x-32, y+16+(24-ceil(DoorHeight)));
     draw_sprite_part_ext(sprCapsuleDoor, 0, 0, 0, 24, ceil(DoorHeight), x+32, y+16+(24-ceil(DoorHeight)), -1, 1, c_white, 1);
     draw_sprite(sprCapsuleLock, 0, LockX, LockY);

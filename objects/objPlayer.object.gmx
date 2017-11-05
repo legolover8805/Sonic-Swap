@@ -1667,6 +1667,18 @@ if(Underwater == false){
         with(objMonitor)
             Platform = 2;
     }
+    
+    // - Running on Water -------
+
+    if (abs(Speed) &gt;= 2 &amp;&amp; place_meeting(x, y+2, objWater)) {
+        Action = ActionWaterRun;
+        global.WaterRun = 1;
+        Ground = true;
+    }
+    else if (place_meeting(x, y, objWater)) {
+        global.WaterRun = 0;
+        Ground = false;
+    }
 </string>
           </argument>
         </arguments>
