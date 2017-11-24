@@ -1,5 +1,4 @@
 
-
     if(KeyA == false && Gravity < JumpRelease && JumpVariable <> 0)
         Gravity = JumpRelease;
 
@@ -80,7 +79,7 @@
         audio_pause_sound(global.CurrentSong);
         audio_play_sound(sndSuperSonic, 1, true);
         global.CurrentSong = sndSuperSonic;
-    }else if(KeySPressed && HyperForm == true && ShieldUsable == true){
+    }else if(KeySPressed && SuperForm == true && ShieldUsable == true){
         if(KeyUp == true){
             Speed       = 0;
             Gravity     = -8;
@@ -95,7 +94,8 @@
             objCamera.alarm[0]     = 16;
         }
         audio_play_sound(sndPlayerSpindash, 1, false);
-    }else if(KeyBPressed && CharacterId == consCharacterSonic && UseHoming == true && ShieldUsable == true)
-        scrPlayerHomingAttack();
+    }else if(KeyBPressed && swap == 0){
+        Action = ActionSwap;
+    }
     
         

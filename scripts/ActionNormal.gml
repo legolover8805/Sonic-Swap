@@ -3,8 +3,9 @@
     //--- Action - Normal ---------------\\   
     //-----------------------------------\\
     // - Idle Action.
-    
-
+    if (Ground == true) {
+        swap = 0;
+    }
     // - Pushing -------
         if(Ground == true && Speed == 0 && AngleMode == 0 &&(scrPlayerCollisionRightSensor(objParentTerrain) == true && KeyRight))
                 Action = ActionPush;    

@@ -2,7 +2,7 @@
     switch(Action){    
         case ActionNormal:
             //--- Peel Out ----
-            if(abs(Speed) >= 12 && (Animation != "Breath"|| Ground == true))
+            if(abs(Speed) >= 10 && (Animation != "Breath"|| Ground == true))
                 Animation = "MovePeelOut";
             //--- Running ----
             else if(abs(Speed) >= 6 && (Animation != "Breath"|| Ground == true))

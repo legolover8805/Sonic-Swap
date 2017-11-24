@@ -921,6 +921,7 @@
         <script>scripts\ActionOuttaHere.gml</script>
         <script>scripts\ActionDebug.gml</script>
         <script>scripts\ActionWaterRun.gml</script>
+        <script>scripts\ActionSwap.gml</script>
       </scripts>
       <scripts name="Animation_System">
         <script>scripts\scrAnimationSystemAddRepeat.gml</script>
