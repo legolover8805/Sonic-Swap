@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="640" hview="480" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="objController" x="0" y="0" name="inst_9CA509F4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCollisionMask01" x="32" y="320" name="inst_76F72BCB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCollisionMask01" x="0" y="320" name="inst_183A5741" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCollisionMask01" x="64" y="320" name="inst_CA631E51" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -286,6 +285,7 @@
     <instance objName="objMZLavaTop" x="864" y="160" name="inst_40AC4861" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objHydrocityTimerFanLeft" x="1460" y="384" name="inst_B2AD1CC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBubbleSpawn" x="2356" y="560" name="inst_CC656864" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objController" x="0" y="0" name="inst_6C681E9A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

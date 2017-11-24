@@ -152,6 +152,8 @@
         HyperForm               = false;
         DisableSuper            = false;
 
+        swap                    = 0;
+        
         Landed                  = false;
 
         GrabType                = 0;

@@ -53,6 +53,9 @@
             scrAnimationSystemAddSimple("Corkscrew", 0, sprS2SonicCorkscrew);
 
             scrAnimationSystemAdd("OuttaHere", 0.1, sprS2SonicOuttaHere, 8);
+            
+            scrAnimationSystemAddSimple("Fly", 0.3, sprS2SonicJog);
+            scrAnimationSystemAddSimple("Glide", 0.3, sprS2SonicJog);
         }else{
             scrAnimationSystemAddSimple("Idle", 0.25, sprS2SuperSonicIdle);
             scrAnimationSystemAdd("CrouchDown", 0.25, sprS2SuperSonicCrouch, 3);
@@ -84,6 +87,9 @@
             scrAnimationSystemAddSimple("Breath", 0.15, sprS2SuperSonicBreath);
             scrAnimationSystemAddSimple("Grab", 0.2, sprS2SuperSonicGrab);
             scrAnimationSystemAddSimple("Corkscrew", 0, sprS2SuperSonicCorkscrew);
+            
+            scrAnimationSystemAddSimple("Fly", 0.3, sprS2SuperSonicJog);
+            scrAnimationSystemAddSimple("Glide", 0.3, sprS2SuperSonicJog);
         }
     }else if(CharacterId == consCharacterTails){
         scrAnimationSystemAddSimple("Idle", 0, sprS2TailsIdle);
@@ -170,4 +176,5 @@
         
         scrAnimationSystemAdd("Transform", 0.3, sprKnucklesTransform,  13);
         scrAnimationSystemAddSimple("Corkscrew", 0, sprKnucklesCorkscrew);
+        scrAnimationSystemAddSimple("Fly", 0.3, sprKnucklesJog);
     }

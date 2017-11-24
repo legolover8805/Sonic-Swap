@@ -318,14 +318,20 @@
         OS = "Unknown";
     if(gamepad_is_supported() == true){
         if(gamepad_is_connected(0) == true){        
-            if(show_question("A Controller has been detected. Would you like to use it?") == true)
+            if(show_question("A Controller has been detected. Would you like to use it?") == true){
                 UseGP = true;
-            else
-                UseGP = false
-        }else
-            UseGP = false
+                global.UseGP = true;
+            }else{
+                UseGP = false;
+                global.UseGP = false;
+            }
+        }else{
+            UseGP = false;
+            global.UseGP = false;
+        }
     }else{
         UseGP = false;
+        global.UseGP = false;
     }
 
     Resolution[0] = 320;

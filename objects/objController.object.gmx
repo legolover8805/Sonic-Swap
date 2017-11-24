@@ -497,6 +497,41 @@
     //Lives Amount
     draw_text(view_xview[0]+65, view_yview[0]+view_hview[0]-21, global.Lives);
     draw_set_halign(fa_left);
+    
+    //Swap Button
+    draw_sprite(sprSwap, 0, view_xview[0]+304, view_yview[0]+16);
+    if (global.UseGP == true){
+        if (objPlayer.Action == ActionJumping &amp;&amp; objPlayer.swap == 0) {
+            draw_sprite(sprSwap, 4, view_xview[0]+280, view_yview[0]+16);
+        } else {
+            draw_sprite(sprSwap, 3, view_xview[0]+280, view_yview[0]+16);
+        }
+    } else {
+        if (objPlayer.Action == ActionJumping &amp;&amp; objPlayer.swap == 0) {
+            draw_sprite(sprSwap, 2, view_xview[0]+280, view_yview[0]+16);
+        } else {
+            draw_sprite(sprSwap, 1, view_xview[0]+280, view_yview[0]+16);
+        }
+    }   
+    
+    //Super Button
+    if (objPlayer.SuperForm == false &amp;&amp; global.Rings &gt;= 50 &amp;&amp; global.ChaosEmeralds == 127 &amp;&amp; objPlayer.UseSuperForms == true &amp;&amp; objPlayer.DisableSuper == false &amp;&amp; objPlayer.Action != ActionTransform) {
+        draw_sprite(sprSuper, 0, view_xview[0]+304, view_yview[0]+40);
+        if (global.UseGP == true){
+            if (objPlayer.Action == ActionJumping) {
+                draw_sprite(sprSuper, 4, view_xview[0]+280, view_yview[0]+40);
+            } else {
+                draw_sprite(sprSuper, 3, view_xview[0]+280, view_yview[0]+40);
+            }
+        } else {
+            if (objPlayer.Action == ActionJumping) {
+                draw_sprite(sprSuper, 2, view_xview[0]+280, view_yview[0]+40);
+            } else {
+                draw_sprite(sprSuper, 1, view_xview[0]+280, view_yview[0]+40);
+            }
+        }   
+    } 
+
 
 </string>
           </argument>

@@ -790,6 +790,8 @@
       <sprite>sprites\sprTouchDPadPress</sprite>
       <sprite>sprites\sprTouchStart</sprite>
       <sprite>sprites\sprTouchStartPress</sprite>
+      <sprite>sprites\sprSuper</sprite>
+      <sprite>sprites\sprSwap</sprite>
     </sprites>
     <sprites name="Menus">
       <sprite>sprites\sprTitleScreen</sprite>
