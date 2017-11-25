@@ -1580,7 +1580,7 @@
     <room>rooms\roomCutscene</room>
     <room>rooms\roomCredits</room>
   </rooms>
-  <constants number="77">
+  <constants number="78">
     <constant name="ActionDead">-2</constant>
     <constant name="consActionClimb">15</constant>
     <constant name="consActionClimbRise">16</constant>
@@ -1617,6 +1617,7 @@
     <constant name="consAnimationsSpeed">1</constant>
     <constant name="consAnimationsSprite">2</constant>
     <constant name="consAnimationsTime">6</constant>
+    <constant name="consCharacterMetal">4</constant>
     <constant name="consCharacterKnuckles">3</constant>
     <constant name="consCharacterNone">0</constant>
     <constant name="consCharacterSonic">1</constant>
@@ -1628,7 +1629,6 @@
     <constant name="consHarmfulTypeProjectile">3</constant>
     <constant name="consLeft">2</constant>
     <constant name="consMonitorEggman">1</constant>
-    <constant name="consMonitorInvincibility">3</constant>
     <constant name="consMonitorLife">8</constant>
     <constant name="consMonitorRing">0</constant>
     <constant name="consMonitorShield">4</constant>
@@ -1641,6 +1641,7 @@
     <constant name="consRecordPlay">2</constant>
     <constant name="consRecordRec">1</constant>
     <constant name="consRight">3</constant>
+    <constant name="consMonitorInvincibility">3</constant>
     <constant name="consShieldElectric">3</constant>
     <constant name="consShieldFire">4</constant>
     <constant name="consShieldIce">6</constant>

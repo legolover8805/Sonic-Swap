@@ -153,6 +153,8 @@
         DisableSuper            = false;
 
         swap                    = 0;
+        MetalJumping            = 0;
+        MetalDashing            = 0;
         
         Landed                  = false;
 
@@ -217,7 +219,7 @@
         AngleSensorWidth        = 6;
         GroundSensorHeight      = 36;                    // - Maximum distance the ground checking sensors can move.
         GroundSensorHeightMin   = 29;                    // - Minimum distance the ground checking sensors can move.
-        all3ButtonsJump         = true;                  // - Flag determining if A, B, and C jump or rev spindash.
+        all3ButtonsJump         = false;                  // - Flag determining if A, B, and C jump or rev spindash.
 
         Sounds3D_Ring           = false;                 // - Use 3D sounds for Rings(CPU intensive).
         RingStereoMix           = false;                 // - If set to true the ring sound effect will play on both left and right channels, otherwise it'll switch between the two.
@@ -289,6 +291,11 @@
             case consCharacterKnuckles:
                 SuperPalette            = sprSuperKnucklesPalette;
                 HyperPalette            = sprHyperKnucklesPalette;
+                DeformPalette           = sprS2SonicTransformPalette;
+                break;
+            case consCharacterMetal:
+                SuperPalette            = sprS2SuperSonicPalette;
+                HyperPalette            = sprS2HyperSonicPalette;
                 DeformPalette           = sprS2SonicTransformPalette;
         }  
 

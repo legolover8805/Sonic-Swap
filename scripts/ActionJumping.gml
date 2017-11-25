@@ -70,6 +70,26 @@
             Gravity = 0;
         Speed = 4*image_xscale;
         TurnSpeed = 0;
+    }else if(KeyAPressed && CharacterId == consCharacterMetal){
+        if(KeyDown){
+            Action       = ActionBounce;
+            Gravity      = 8;
+        } else if(MetalJumping == 0) {
+            MetalJumping = 1;
+            Gravity = -5.5;
+            JumpVariable = false;
+        }
+    }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings >= 5){
+        global.Rings -= 5;
+        Speed        = 8*image_xscale;
+        Gravity      = 0;
+        audio_play_sound(sndShieldActionFire, 1, false);
+        if(CameraLag == true){
+            objCamera.CameraLock   = true;
+            objCamera.alarm[0]     = 16;
+        }
+    }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings < 5) {
+        audio_play_sound(sndPlayerSpike, 1, false);
     }else if(KeySPressed && SuperForm == false && global.Rings >= 50 && global.ChaosEmeralds == 127
     && UseSuperForms == true && DisableSuper == false){
         Speed       = 0;
@@ -94,7 +114,7 @@
             objCamera.alarm[0]     = 16;
         }
         audio_play_sound(sndPlayerSpindash, 1, false);
-    }else if(KeyBPressed && swap == 0){
+    }else if(KeyBPressed && swap == 0 && global.Character[1] != consCharacterNone && global.Character[1] != global.Character[0]){
         Action = ActionSwap;
     }
     

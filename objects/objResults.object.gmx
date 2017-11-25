@@ -89,6 +89,9 @@
         case consCharacterKnuckles:
             CharacterId = "KNUCKLES";
             break;
+        case consCharacterMetal:
+            CharacterId = "METAL SONIC";
+            break;
     }
 </string>
           </argument>

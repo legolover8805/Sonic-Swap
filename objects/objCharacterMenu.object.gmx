@@ -40,11 +40,12 @@
           <argument>
             <kind>1</kind>
             <string>
-    Options     = 3;
+    Options     = 4;
     Option[0]   = "SONIC";
     Option[1]   = "TAILS";
     Option[2]   = "KNUCKLES";
-    Title       = "PLAYER SELECT"
+    Option[3]   = "METAL SONIC";
+    Title       = "PLAYER SELECT";
     Id          = 0;
 </string>
           </argument>
@@ -75,6 +76,8 @@
         global.Character[0] = consCharacterTails;
     else if(OptionId == 2)
         global.Character[0] = consCharacterKnuckles;
+    else if(OptionId == 3)
+        global.Character[0] = consCharacterMetal;
 </string>
           </argument>
         </arguments>
