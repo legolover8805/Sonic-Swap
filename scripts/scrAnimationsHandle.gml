@@ -71,11 +71,30 @@
                             AnimationTotalFrames = 1;   
                         }
                     }
+                    //_________________________________\\
+                        //____________METAL SONIC__________\\
+                        //_________________________________\\
+                        else if(CharacterId == consCharacterMetal) {
+                            AnimationTotalFrames += 1;
+                            if(AnimationTotalFrames <= 200 )
+                                Animation = "Idle"; 
+                            else if(AnimationTotalFrames > 200 && AnimationTotalFrames <= 206)
+                                Animation = "IdleWait0";
+                            else if(AnimationTotalFrames > 206 && AnimationTotalFrames <= 860)
+                                Animation = "IdleWait1";
+                            else if(AnimationTotalFrames > 860 && AnimationTotalFrames <= 1330)
+                                Animation = "IdleWait2";
+                            else if (AnimationTotalFrames == 1331){
+                                Animation = "IdleWait1";
+                                AnimationTotalFrames = 206;
+                            }
                         //_________________________________\\
                         //____________SUPER SONIC__________\\
                         //_________________________________\\
                         else if(CharacterId == consCharacterSonic && SuperForm == true){
                             Animation = "Idle";  
+                        }
+                        
                         //_________________________________\\
                         //____________OTHER_CHAR___________\\
                         //_________________________________\\ 

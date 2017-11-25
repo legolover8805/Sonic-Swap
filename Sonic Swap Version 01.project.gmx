@@ -207,6 +207,34 @@
           <sprite>sprites\sprKnucklesCorkscrew</sprite>
           <sprite>sprites\sprKnucklesTransform</sprite>
         </sprites>
+        <sprites name="MetalSonic">
+          <sprite>sprites\sprMSonicIdle</sprite>
+          <sprite>sprites\sprMSonicWalk</sprite>
+          <sprite>sprites\sprMSonicJog</sprite>
+          <sprite>sprites\sprMSonicRun</sprite>
+          <sprite>sprites\sprMSonicRoll</sprite>
+          <sprite>sprites\sprMSonicWait</sprite>
+          <sprite>sprites\sprMSonicWait1</sprite>
+          <sprite>sprites\sprMSonicWait2</sprite>
+          <sprite>sprites\sprMSonicBalanceOut</sprite>
+          <sprite>sprites\sprMSonicBalanceIn</sprite>
+          <sprite>sprites\sprMSonicSpindash</sprite>
+          <sprite>sprites\sprMSonicSpring</sprite>
+          <sprite>sprites\sprMSonicDiag</sprite>
+          <sprite>sprites\sprMSonicCrouchDown</sprite>
+          <sprite>sprites\sprMSonicCrouchUp</sprite>
+          <sprite>sprites\sprMSonicSkid</sprite>
+          <sprite>sprites\sprMSonicPush</sprite>
+          <sprite>sprites\sprMSonicHurt</sprite>
+          <sprite>sprites\sprMSonicDead</sprite>
+          <sprite>sprites\sprMSonicLookUp</sprite>
+          <sprite>sprites\sprMSonicLookDown</sprite>
+          <sprite>sprites\sprMSonicBreath</sprite>
+          <sprite>sprites\sprMSonicTransform</sprite>
+          <sprite>sprites\sprMSonicGrab</sprite>
+          <sprite>sprites\sprMSonicCorkscrew</sprite>
+          <sprite>sprites\sprMSonicDash</sprite>
+        </sprites>
         <sprites name="Super_Sonic">
           <sprite>sprites\sprS2SuperSonicIdle</sprite>
           <sprite>sprites\sprS2SuperSonicWalk</sprite>

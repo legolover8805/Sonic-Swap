@@ -78,6 +78,7 @@
         global.Character[0] = consCharacterKnuckles;
     else if(OptionId == 3)
         global.Character[0] = consCharacterMetal;
+        CharacterId = consCharacterMetal;
 </string>
           </argument>
         </arguments>

@@ -178,13 +178,10 @@
         scrAnimationSystemAddSimple("Corkscrew", 0, sprKnucklesCorkscrew);
         scrAnimationSystemAddSimple("Fly", 0.3, sprKnucklesJog);
     } else if(CharacterId == consCharacterMetal){
-        if(SuperForm == false){
-            scrAnimationSystemAddSimple("Idle", 0, sprS2SonicIdle);
-            scrAnimationSystemAddSimple("Blink", 0, sprS2SonicBlink);
-            scrAnimationSystemAddSimple("IdleWait0", 0, sprS2SonicIdleWait0);
-            scrAnimationSystemAddSimple("IdleWait1", 0.15, sprS2SonicIdleWait1);
-            scrAnimationSystemAddSimple("IdleWait2", 0.33, sprS2SonicIdleWait2); 
-            scrAnimationSystemAdd("IdleWait3", 0.08, sprS2SonicIdleWait3, 1);
+            scrAnimationSystemAddSimple("Idle", 0, sprMSonicIdle);
+            scrAnimationSystemAddSimple("IdleWait0", 0.17, sprMSonicWait);
+            scrAnimationSystemAddSimple("IdleWait1", 0.17, sprMSonicWait1);
+            scrAnimationSystemAddSimple("IdleWait2", 0.17, sprMSonicWait2); 
             scrAnimationSystemAdd("CrouchDown", 0.25, sprS2SonicCrouchDown, 3);
             scrAnimationSystemAddSimple("CrouchUp", 0.25, sprS2SonicCrouchUp);
             scrAnimationSystemAdd("LookUp", 0.25, sprS2SonicLookUp, 4);
@@ -192,10 +189,10 @@
             scrAnimationSystemAddSimple("Pushing", 0.125, sprS2SonicPush);
             scrAnimationSystemAddSimple("Dead", 0, sprS2SonicDead);
     
-            scrAnimationSystemAddSimple("Walking", 0.125, sprS2SonicWalk);
-            scrAnimationSystemAddSimple("Jogging", 0.3, sprS2SonicJog);
-            scrAnimationSystemAddSimple("Running", 0.125, sprS2SonicRun);
-            scrAnimationSystemAddSimple("MovePeelOut", 0.125, sprS2SonicPeelOutMove);
+            scrAnimationSystemAddSimple("Walking", 0.125, sprMSonicWalk);
+            scrAnimationSystemAddSimple("Jogging", 0.3, sprMSonicJog);
+            scrAnimationSystemAddSimple("Running", 0.125, sprMSonicRun);
+            scrAnimationSystemAddSimple("MovePeelOut", 0.125, sprMSonicDash);
             
             scrAnimationSystemAddSimple("Fall", 0.125, sprS2SonicFall);
     
@@ -206,9 +203,8 @@
             scrAnimationSystemAddSimple("BalanceOut",  0.25, sprS2SonicBalanceOut);
             scrAnimationSystemAddSimple("BalanceOut2", 0.25, sprS2SonicBalanceOut2);
     
-            scrAnimationSystemAddSimple("Rolling",  0.2,  sprS2SonicRoll);
-            scrAnimationSystemAddSimple("Spindash", 1,  sprS2SonicSpindash);
-            scrAnimationSystemAddSimple("DropDash", 1, sprS2SonicDropDash);
+            scrAnimationSystemAddSimple("Rolling",  0.2,  sprMSonicRoll);
+            scrAnimationSystemAddSimple("Spindash", 1,  sprMSonicSpindash);
     
             scrAnimationSystemAddSimple("Spring", 0.5, sprS2SonicSpring);
             scrAnimationSystemAddSimple("Diagonal", 0.5, sprS2SonicDiagonalSpring);
@@ -224,39 +220,4 @@
             
             scrAnimationSystemAddSimple("Fly", 0.3, sprS2SonicJog);
             scrAnimationSystemAddSimple("Glide", 0.3, sprS2SonicJog);
-        }else{
-            scrAnimationSystemAddSimple("Idle", 0.25, sprS2SuperSonicIdle);
-            scrAnimationSystemAdd("CrouchDown", 0.25, sprS2SuperSonicCrouch, 3);
-            scrAnimationSystemAddSimple("CrouchUp", 0.25, sprS2SuperSonicCrouchUp);
-            scrAnimationSystemAdd("LookUp", 0.25, sprS2SuperSonicLookUp, 4);
-            scrAnimationSystemAddSimple("LookDown", 0.25, sprS2SuperSonicLookDown);
-            scrAnimationSystemAddSimple("Pushing", 0.125, sprS2SuperSonicPush);
-            scrAnimationSystemAddSimple("Dead", 0, sprS2SonicDead);
-    
-            scrAnimationSystemAddSimple("Walking", 0.125, sprS2SuperSonicWalk);
-            scrAnimationSystemAddSimple("Jogging", 0.3, sprS2SuperSonicJog);
-            scrAnimationSystemAddSimple("Running", 0.125, sprS2SuperSonicRun);
-            scrAnimationSystemAddSimple("MovePeelOut", 0.125, sprS2SuperSonicDash);
-            
-    
-            scrAnimationSystemAddRepeat("Skidding", 0.25, sprS2SuperSonicSkid, false, 3, "Walking");
-            scrAnimationSystemAdd("Hurt", 0.2, sprS2SuperSonicHurt, -1);
-    
-            scrAnimationSystemAddSimple("BalanceIn",   0.25, sprS2SuperSonicBalance);
-            scrAnimationSystemAddSimple("BalanceOut",  0.25, sprS2SuperSonicBalance);
-            scrAnimationSystemAddSimple("BalanceOut2", 0.25, sprS2SuperSonicBalance);
-    
-            scrAnimationSystemAddSimple("Rolling",  0.2,  sprS2SuperSonicRoll);
-            scrAnimationSystemAddSimple("Spindash", 0.3,  sprS2SuperSonicSpindash);
-    
-            scrAnimationSystemAddSimple("Spring", 0.5, sprS2SuperSonicSpring);
-            scrAnimationSystemAddSimple("Diagonal", 0.5, sprS2SuperSonicDiagonalSpring);
-            
-            scrAnimationSystemAddSimple("Breath", 0.15, sprS2SuperSonicBreath);
-            scrAnimationSystemAddSimple("Grab", 0.2, sprS2SuperSonicGrab);
-            scrAnimationSystemAddSimple("Corkscrew", 0, sprS2SuperSonicCorkscrew);
-            
-            scrAnimationSystemAddSimple("Fly", 0.3, sprS2SuperSonicJog);
-            scrAnimationSystemAddSimple("Glide", 0.3, sprS2SuperSonicJog);
-        }
     }
