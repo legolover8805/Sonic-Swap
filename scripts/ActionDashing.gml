@@ -1,6 +1,6 @@
 
 if (Numberthings == 0) {
-    global.Rings -= 5;
+    global.Rings -= 10;
     if global.Rings < 0 
         global.Rings = 0;
     Speed        = 10*image_xscale;
