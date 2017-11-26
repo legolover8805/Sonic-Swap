@@ -386,9 +386,11 @@
     pal_swap_add_palette(sprS2SuperSonicPalette);
     pal_swap_add_palette(sprS2SuperTailsPalette);
     pal_swap_add_palette(sprSuperKnucklesPalette);
+    pal_swap_add_palette(sprSuperMetalPallete);
     pal_swap_add_palette(sprS2HyperSonicPalette);
     pal_swap_add_palette(sprS2HyperTailsPalette);
     pal_swap_add_palette(sprHyperKnucklesPalette);
+    pal_swap_add_palette(sprHyperMetalPalette);
     pal_swap_add_palette(sprS2SonicTransformPalette);
     pal_swap_add_palette(sprGHZWaterPalette);
     
@@ -427,7 +429,6 @@
     ds_list_add(global.LevelList, roomGreenHill1);
     ds_list_add(global.LevelList, roomEmeraldHill1);
     ds_list_add(global.LevelList, roomTestLevel2);
-    ds_list_add(global.LevelList, roomCutscene);
    // ds_list_add(global.LevelList, roomCredits);
     
     global.LevelNames    = ds_map_create();
@@ -435,16 +436,12 @@
     ds_map_add(global.LevelNames, roomGreenHill1, "GREEN HILL");
     ds_map_add(global.LevelNames, roomTestLevel2, "GENERIC TEST DOS");
     ds_map_add(global.LevelNames, roomEmeraldHill1, "EMERALD HILL");
-    ds_map_add(global.LevelNames, roomCutscene, "Cutscene");
-    ds_map_add(global.LevelNames, roomWaterWalk, "WATER TEST");
     
     global.LevelActs    = ds_map_create();
     ds_map_add(global.LevelActs, roomTestLevel, 1);
     ds_map_add(global.LevelActs, roomTestLevel2, 2);
     ds_map_add(global.LevelActs, roomEmeraldHill1, 1);
     ds_map_add(global.LevelActs, roomGreenHill1, 1);
-    ds_map_add(global.LevelActs, roomCutscene, 1);    
-    ds_map_add(global.LevelActs, roomWaterWalk, 1);
 
     globalvar LvlMusic;
     LvlMusic = ds_map_create();
@@ -452,8 +449,6 @@
     ds_map_add(LvlMusic, roomTestLevel2, sndEmeraldHill);
     ds_map_add(LvlMusic, roomEmeraldHill1, sndEmeraldHill);
     ds_map_add(LvlMusic, roomGreenHill1, sndGreenHillZone);
-    ds_map_add(LvlMusic, roomCutscene, sndEmeraldHill);
-    ds_map_add(LvlMusic, roomWaterWalk, sndGreenHillZone);
 
     globalvar LvlAnimals;
     LvlAnimals = ds_map_create();
@@ -461,8 +456,6 @@
     ds_map_add(LvlAnimals, roomTestLevel, 1);
     ds_map_add(LvlAnimals, roomTestLevel2, 1);
     ds_map_add(LvlAnimals, roomEmeraldHill1, 0);
-    ds_map_add(LvlAnimals, roomCutscene, 1);
-    ds_map_add(LvlAnimals, roomWaterWalk, 2);
 
 
     // Emerald Hill Zone

@@ -294,8 +294,8 @@
                 DeformPalette           = sprS2SonicTransformPalette;
                 break;
             case consCharacterMetal:
-                SuperPalette            = sprS2SuperSonicPalette;
-                HyperPalette            = sprS2HyperSonicPalette;
+                SuperPalette            = sprSuperMetalPallete;
+                HyperPalette            = sprHyperMetalPalette;
                 DeformPalette           = sprS2SonicTransformPalette;
         }  
 
@@ -2158,15 +2158,21 @@ if(Underwater == false){
         if(SuperForm == true){
         Dir = point_direction(x, y, xprevious, yprevious);
             if(HyperForm == false){
-            if (CharacterId == consCharacterSonic){
-                pal_swap_set(shdPaletteController, sprS2SuperSonicPalette, floor(CurrentPalette));
-            }    
-            if (CharacterId == consCharacterTails){
-                pal_swap_set(shdPaletteController, sprS2SuperTailsPalette, floor(CurrentPalette));
-            }
-            if (CharacterId == consCharacterKnuckles){
-                pal_swap_set(shdPaletteController, sprSuperKnucklesPalette, floor(CurrentPalette));
-            }
+                if (CharacterId == consCharacterSonic){
+                    pal_swap_set(shdPaletteController, sprS2SuperSonicPalette, floor(CurrentPalette));
+                }    
+                if (CharacterId == consCharacterTails){
+                    pal_swap_set(shdPaletteController, sprS2SuperTailsPalette, floor(CurrentPalette));
+                }
+                if (CharacterId == consCharacterKnuckles){
+                    pal_swap_set(shdPaletteController, sprSuperKnucklesPalette, floor(CurrentPalette));
+                }
+                if (CharacterId == consCharacterMetal){
+                    pal_swap_set(shdPaletteController, sprSuperMetalPallete, floor(CurrentPalette));
+                    if (Frame mod 300 == 0) {
+                        instance_create(x,y,objMetalSonicEffect);
+                    }
+                }
                 draw_sprite_ext(sprite_index, image_index*SpeedMultiplier, floor(AnimationX)+(lengthdir_x(abs(x-xprevious)*2, Dir)), floor(AnimationY)+(lengthdir_y(abs(y-yprevious)*2, Dir)), image_xscale, 1, image_angle, image_blend, 0.9); 
                 draw_sprite_ext(sprite_index, image_index*SpeedMultiplier, floor(AnimationX)+(lengthdir_x(abs(x-xprevious)*4, Dir)), floor(AnimationY)+(lengthdir_y(abs(y-yprevious)*4, Dir)), image_xscale, 1, image_angle, image_blend, 0.7); 
                 draw_sprite_ext(sprite_index, image_index*SpeedMultiplier, floor(AnimationX)+(lengthdir_x(abs(x-xprevious)*6, Dir)), floor(AnimationY)+(lengthdir_y(abs(y-yprevious)*6, Dir)), image_xscale, 1, image_angle, image_blend, 0.5); 

@@ -220,4 +220,10 @@
             if(Animation != "Corkscrew" && Animation != "Rolling")
                 Animation = "Corkscrew";
             break;
+        case ActionDashing:
+            Animation     = "Dashing";
+            break;
+        case ActionEndDashing:
+            Animation     = "Vulnerable";
+            break;
     }

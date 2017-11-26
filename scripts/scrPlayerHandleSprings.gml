@@ -1,3 +1,5 @@
+    if(Action == ActionDashing) 
+        exit;
     i = 0;
     repeat(instance_number(objSpringParent)){
         _ObjectHandle = scrInstanceNthNearest(x, y, objSpringParent, i);

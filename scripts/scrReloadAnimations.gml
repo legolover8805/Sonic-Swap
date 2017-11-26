@@ -182,42 +182,42 @@
             scrAnimationSystemAddSimple("IdleWait0", 0.17, sprMSonicWait);
             scrAnimationSystemAddSimple("IdleWait1", 0.17, sprMSonicWait1);
             scrAnimationSystemAddSimple("IdleWait2", 0.17, sprMSonicWait2); 
-            scrAnimationSystemAdd("CrouchDown", 0.25, sprS2SonicCrouchDown, 3);
-            scrAnimationSystemAddSimple("CrouchUp", 0.25, sprS2SonicCrouchUp);
-            scrAnimationSystemAdd("LookUp", 0.25, sprS2SonicLookUp, 4);
-            scrAnimationSystemAddSimple("LookDown", 0.25, sprS2SonicLookDown);
-            scrAnimationSystemAddSimple("Pushing", 0.125, sprS2SonicPush);
-            scrAnimationSystemAddSimple("Dead", 0, sprS2SonicDead);
+            scrAnimationSystemAdd("CrouchDown", 0.25, sprMSonicCrouchDown, 3);
+            scrAnimationSystemAddSimple("CrouchUp", 0.25, sprMSonicCrouchUp);
+            scrAnimationSystemAdd("LookUp", 0.25, sprMSonicLookUp, 4);
+            scrAnimationSystemAddSimple("LookDown", 0.25, sprMSonicLookDown);
+            scrAnimationSystemAddSimple("Pushing", 0.125, sprMSonicPush);
+            scrAnimationSystemAddSimple("Dead", 0, sprMSonicDead);
     
             scrAnimationSystemAddSimple("Walking", 0.125, sprMSonicWalk);
             scrAnimationSystemAddSimple("Jogging", 0.3, sprMSonicJog);
             scrAnimationSystemAddSimple("Running", 0.125, sprMSonicRun);
             scrAnimationSystemAddSimple("MovePeelOut", 0.125, sprMSonicDash);
             
-            scrAnimationSystemAddSimple("Fall", 0.125, sprS2SonicFall);
     
-            scrAnimationSystemAddRepeat("Skidding", 0.25, sprS2SonicSkid, false, 1, "Walking");
-            scrAnimationSystemAdd("Hurt", 0.2, sprS2SonicHurt, -1);
+            scrAnimationSystemAddRepeat("Skidding", 0.25, sprMSonicSkid, false, 1, "Walking");
+            scrAnimationSystemAdd("Hurt", 0.2, sprMSonicHurt, -1);
             
-            scrAnimationSystemAddSimple("BalanceIn",   0.25, sprS2SonicBalanceIn);
-            scrAnimationSystemAddSimple("BalanceOut",  0.25, sprS2SonicBalanceOut);
-            scrAnimationSystemAddSimple("BalanceOut2", 0.25, sprS2SonicBalanceOut2);
+            scrAnimationSystemAddSimple("BalanceIn",   0.25, sprMSonicBalanceIn);
+            scrAnimationSystemAddSimple("BalanceOut",  0.25, sprMSonicBalanceOut);
+            scrAnimationSystemAddSimple("BalanceOut2", 0.25, sprMSonicBalanceOut);
     
             scrAnimationSystemAddSimple("Rolling",  0.2,  sprMSonicRoll);
             scrAnimationSystemAddSimple("Spindash", 1,  sprMSonicSpindash);
     
-            scrAnimationSystemAddSimple("Spring", 0.5, sprS2SonicSpring);
-            scrAnimationSystemAddSimple("Diagonal", 0.5, sprS2SonicDiagonalSpring);
-            scrAnimationSystemAdd("Peelout", 0.5, sprS2SonicPeelout, 12);
-    
+            scrAnimationSystemAddSimple("Spring", 0.5, sprMSonicSpring);
+            scrAnimationSystemAddSimple("Diagonal", 0.5, sprMSonicDiag);
 
-            scrAnimationSystemAddSimple("Breath", 0.15, sprS2SonicBreath);
-            scrAnimationSystemAdd("Transform", 0.3, sprS2SonicTransform,  12);
-            scrAnimationSystemAddSimple("Grab", 0.2, sprS2SonicGrab);
-            scrAnimationSystemAddSimple("Corkscrew", 0, sprS2SonicCorkscrew);
+            scrAnimationSystemAddSimple("Breath", 0.15, sprMSonicBreath);
+            scrAnimationSystemAdd("Transform", 0.3, sprMSonicTransform,  12);
+            scrAnimationSystemAddSimple("Grab", 0.05, sprMSonicGrab);
+            scrAnimationSystemAddSimple("Corkscrew", 0, sprMSonicCorkscrew);
 
-            scrAnimationSystemAdd("OuttaHere", 0.1, sprS2SonicOuttaHere, 8);
             
-            scrAnimationSystemAddSimple("Fly", 0.3, sprS2SonicJog);
-            scrAnimationSystemAddSimple("Glide", 0.3, sprS2SonicJog);
+            scrAnimationSystemAddSimple("Fly", 0.3, sprMSonicJog);
+            scrAnimationSystemAddSimple("Glide", 0.3, sprMSonicJog);
+            
+            scrAnimationSystemAdd("Dashing", 0.5, sprMSonicDashing, 2);
+            scrAnimationSystemAddRepeat("EndDashing", 0.25, sprMSonicEndDashing, false, 1, "Vulnerable");
+            scrAnimationSystemAddSimple("Vulnerable", 0, sprMSonicVuln);
     }

@@ -39,7 +39,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>    BlockWidth = 32;
+    BlockHeight = 20;
     Frame    = -1;
     Move     = 0;
     Height   = 20;

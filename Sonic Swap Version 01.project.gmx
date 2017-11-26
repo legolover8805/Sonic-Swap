@@ -30,6 +30,9 @@
         <sound>sound\sndSonicYes</sound>
       </sounds>
       <sound>sound\sndPlayerDropDash</sound>
+      <sound>sound\sndMSBall</sound>
+      <sound>sound\sndMSElec</sound>
+      <sound>sound\sndMSCharge</sound>
     </sounds>
     <sounds name="Object">
       <sounds name="Shield">
@@ -234,6 +237,10 @@
           <sprite>sprites\sprMSonicGrab</sprite>
           <sprite>sprites\sprMSonicCorkscrew</sprite>
           <sprite>sprites\sprMSonicDash</sprite>
+          <sprite>sprites\sprMSonicDashing</sprite>
+          <sprite>sprites\sprMSonicEndDashing</sprite>
+          <sprite>sprites\sprMSonicVuln</sprite>
+          <sprite>sprites\sprMSonicEffect</sprite>
         </sprites>
         <sprites name="Super_Sonic">
           <sprite>sprites\sprS2SuperSonicIdle</sprite>
@@ -264,9 +271,11 @@
           <sprite>sprites\sprS2SuperSonicPalette</sprite>
           <sprite>sprites\sprS2SuperTailsPalette</sprite>
           <sprite>sprites\sprSuperKnucklesPalette</sprite>
+          <sprite>sprites\sprSuperMetalPallete</sprite>
           <sprite>sprites\sprS2HyperSonicPalette</sprite>
           <sprite>sprites\sprS2HyperTailsPalette</sprite>
           <sprite>sprites\sprHyperKnucklesPalette</sprite>
+          <sprite>sprites\sprHyperMetalPalette</sprite>
           <sprite>sprites\sprS2SonicTransformPalette</sprite>
         </sprites>
       </sprites>
@@ -952,6 +961,8 @@
         <script>scripts\ActionDebug.gml</script>
         <script>scripts\ActionWaterRun.gml</script>
         <script>scripts\ActionSwap.gml</script>
+        <script>scripts\ActionDashing.gml</script>
+        <script>scripts\ActionEndDashing.gml</script>
       </scripts>
       <scripts name="Animation_System">
         <script>scripts\scrAnimationSystemAddRepeat.gml</script>
@@ -1316,6 +1327,7 @@
         <object>objects\objShieldSpark</object>
         <object>objects\objWaterfallSound</object>
         <object>objects\objLavaDraw</object>
+        <object>objects\objMetalSonicEffect</object>
       </objects>
       <objects name="Animals">
         <object>objects\objAnimal</object>
@@ -1662,7 +1674,7 @@
     <constant name="consMonitorShield">4</constant>
     <constant name="consMonitorShieldElectric">6</constant>
     <constant name="consMonitorShieldFire">7</constant>
-    <constant name="consMonitorShieldIce">11</constant>
+    <constant name="consMonitorShieldIce">12</constant>
     <constant name="consMonitorShieldWater">5</constant>
     <constant name="consMonitorSpeedSneakers">2</constant>
     <constant name="consRecordIdle">0</constant>

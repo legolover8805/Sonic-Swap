@@ -72,23 +72,19 @@
         TurnSpeed = 0;
     }else if(KeyAPressed && CharacterId == consCharacterMetal){
         if(KeyDown){
+            audio_play_sound(sndMSBall, 1, false);
             Action       = ActionBounce;
             Gravity      = 8;
         } else if(MetalJumping == 0) {
+            audio_play_sound(sndShieldActionLightning, 1, false);
             MetalJumping = 1;
             Gravity = -5.5;
             JumpVariable = false;
         }
-    }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings >= 5){
-        global.Rings -= 5;
-        Speed        = 8*image_xscale;
-        Gravity      = 0;
-        audio_play_sound(sndShieldActionFire, 1, false);
-        if(CameraLag == true){
-            objCamera.CameraLock   = true;
-            objCamera.alarm[0]     = 16;
-        }
-    }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings < 5) {
+    }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings >= 10){
+        Numberthings = 0;
+        Action       = ActionDashing;
+    }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings < 10) {
         audio_play_sound(sndPlayerSpike, 1, false);
     }else if(KeySPressed && SuperForm == false && global.Rings >= 50 && global.ChaosEmeralds == 127
     && UseSuperForms == true && DisableSuper == false){

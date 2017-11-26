@@ -47,7 +47,7 @@
             Gravity = -3;
         }
     }
-    if((Action == ActionRolling && abs(Speed) >= 4.5) || CharacterId == consCharacterKnuckles){
+    if((Action == ActionRolling && abs(Speed) >= 4.5) || CharacterId == consCharacterKnuckles || Action == ActionDashing || Action == ActionBounce){
         _ObjectHandle = collision_rectangle(x-20, y-20, x+20, y+20, objBreakableTerrainRoll, false, true);
         while(_ObjectHandle != noone){
             EnemyChain += 1;
