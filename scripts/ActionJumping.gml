@@ -84,7 +84,7 @@
     }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings >= 10){
         Numberthings = 0;
         Action       = ActionDashing;
-    }else if(KeyCPressed && CharacterId == consCharacterMetal && global.Rings < 10) {
+    }else if(KeyC && CharacterId == consCharacterMetal && global.Rings < 10) {
         audio_play_sound(sndPlayerSpike, 1, false);
     }else if(KeySPressed && SuperForm == false && global.Rings >= 50 && global.ChaosEmeralds == 127
     && UseSuperForms == true && DisableSuper == false){
