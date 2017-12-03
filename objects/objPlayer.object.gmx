@@ -960,7 +960,7 @@
     if(Recording == true &amp;&amp; objGlobal.RecordingMode == consRecordPlay){
         scrRecordInputPlay();
         
-    }else if(Delay == false &amp;&amp;(instance_exists(objResults) == false || instance_exists(objCapsule) == true) &amp;&amp;(Recording == false || objGlobal.RecordingMode == consRecordRec) &amp;&amp; Cutscene == false){    
+    }else if(Delay == false &amp;&amp;(instance_exists(objResults) == false || objGlobal.RecordingMode == consRecordRec) &amp;&amp; Cutscene == false){    
         KeyLeft                 = false;   
         KeyRight                = false;   
         KeyUp                   = false;   
@@ -1020,7 +1020,7 @@
             KeyLeftPressed      = false;
             KeyRightPressed     = false;
         } 
-    }else if((instance_exists(objResults) == false || instance_exists(objCapsule) == true) &amp;&amp; Cutscene == false){
+    }else if(instance_exists(objResults) == false){
         FirstPlayer = global.Player[0];
         if((x &lt; FirstPlayer.x-10 ||(FirstPlayer.y &lt; y-50 &amp;&amp; FirstPlayer.Ground == true &amp;&amp; FirstPlayer.Speed &gt; 0))
             &amp;&amp; (FirstPlayer.y &gt;= y-50 || FirstPlayer.Ground == false || FirstPlayer.Speed &gt;= 0))
@@ -1065,8 +1065,8 @@
             }
            Action = ActionCPURespawn;
         }
-    }else if(instance_exists(objResults) == true &amp;&amp; instance_exists(objCapsule) == false &amp;&amp; Cutscene == false){
-        KeyRight        = true;
+    }else if(instance_exists(objResults) == true &amp;&amp; Cutscene == false){
+        KeyRight        = false;
         KeyLeft         = false;
         KeyUp           = false;
         KeyA            = false;
@@ -1078,6 +1078,10 @@
         if(Action == ActionCrouchDown || Action == ActionSpindash || Action == ActionRolling || Action == ActionLookUp){
             Action = ActionNormal;
         }
+        Speed = 0;
+        Action = ActionVictory;
+        VictoryFrames = 0;
+        Posing = false;
     }
     if(Recording == true &amp;&amp; objGlobal.RecordingMode == consRecordRec){
         scrRecordInputRec();

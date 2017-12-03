@@ -141,6 +141,8 @@
           <sprite>sprites\sprS2SonicPeelOutMove</sprite>
           <sprite>sprites\sprS2SonicFall</sprite>
           <sprite>sprites\sprS2SonicOuttaHere</sprite>
+          <sprite>sprites\sprSonicVictory</sprite>
+          <sprite>sprites\sprSonicPose</sprite>
         </sprites>
         <sprites name="Tails">
           <sprite>sprites\sprS2TailsIdle</sprite>
@@ -175,6 +177,7 @@
           <sprite>sprites\sprS2TailsGrab</sprite>
           <sprite>sprites\sprS2TailsCorkscrew</sprite>
           <sprite>sprites\sprS2TailsTransform</sprite>
+          <sprite>sprites\sprTailsVictory</sprite>
         </sprites>
         <sprites name="Knuckles">
           <sprite>sprites\sprKnucklesWait</sprite>
@@ -209,6 +212,7 @@
           <sprite>sprites\sprKnucklesGrab</sprite>
           <sprite>sprites\sprKnucklesCorkscrew</sprite>
           <sprite>sprites\sprKnucklesTransform</sprite>
+          <sprite>sprites\sprKnucklesVictory</sprite>
         </sprites>
         <sprites name="MetalSonic">
           <sprite>sprites\sprMSonicIdle</sprite>
@@ -241,6 +245,7 @@
           <sprite>sprites\sprMSonicEndDashing</sprite>
           <sprite>sprites\sprMSonicVuln</sprite>
           <sprite>sprites\sprMSonicEffect</sprite>
+          <sprite>sprites\sprMSonicVictory</sprite>
         </sprites>
         <sprites name="Super_Sonic">
           <sprite>sprites\sprS2SuperSonicIdle</sprite>
@@ -290,6 +295,7 @@
           <sprite>sprites\sprEnemyBuzzerFly</sprite>
           <sprite>sprites\sprEnemyBuzzerShot</sprite>
           <sprite>sprites\sprEnemyMotobug</sprite>
+          <sprite>sprites\sprMotobugHit</sprite>
           <sprite>sprites\sprEnemyChopper</sprite>
           <sprite>sprites\sprEnemyCrabmeatWalk</sprite>
           <sprite>sprites\sprEnemyCrabmeatShoot</sprite>
@@ -963,6 +969,7 @@
         <script>scripts\ActionSwap.gml</script>
         <script>scripts\ActionDashing.gml</script>
         <script>scripts\ActionEndDashing.gml</script>
+        <script>scripts\ActionVictory.gml</script>
       </scripts>
       <scripts name="Animation_System">
         <script>scripts\scrAnimationSystemAddRepeat.gml</script>
@@ -1171,6 +1178,12 @@
             <object>objects\objEnemyNewtronBlue</object>
             <object>objects\objEnemyNewtronGreen</object>
             <object>objects\objEnemyNewtronShot</object>
+          </objects>
+          <objects name="Bosses">
+            <object>objects\objParentBoss</object>
+            <object>objects\objCameraLock</object>
+            <object>objects\objCameraUnlock</object>
+            <object>objects\objMotobugBoss</object>
           </objects>
           <object>objects\objMovingSpike</object>
           <object>objects\objSpike</object>

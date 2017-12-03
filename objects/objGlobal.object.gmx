@@ -506,7 +506,8 @@
     }
     
     global.InputStart   = vk_enter;
-
+    
+    global.Boss            = false;
     global.Spindash        = true;
     global.RotationMode    = true;
     global.UseTrail        = false;

@@ -3,7 +3,34 @@
 
     OffX = 9+(15*(Shield == consShieldInstashield))    
     OffY = 19+(5*(Shield == consShieldInstashield))    
+    _ObjectHandle = collision_rectangle(x-OffX, y-OffY, x+OffX, y+OffY, objParentBoss, false, true)
+    if(_ObjectHandle != noone){
+        if(Action == ActionRolling || Action == ActionJumping || Action == ActionSpindash || Action == ActionGlide
+        || ShieldAction == true || Invincibility == 2 || SuperForm || Homing || Action == ActionDropDash || Action == ActionDashing || Action == ActionBounce){
+            if(Gravity < 0 || y > _ObjectHandle.y){
+                Gravity -= sign(Gravity);
+            }else if(Gravity > 0 && y < _ObjectHandle.y){
+                if(KeyA || JumpVariable == false){
+                    Gravity *= -1;
+                }else{
+                    Gravity = max(-4, Gravity*-1);
+                }
+            }
+            if(Homing){
+                Speed           = 0;
+                Gravity         = -3;
+                ShieldUsable    = true;
+            }
+            with(_ObjectHandle) {
+                if BossHit == false && BossHealth > 0 {
+                    BossHealth -= 1;
+                    BossHit = true;
+                }
+            }
 
+        }else
+            scrPlayerHurt(_ObjectHandle, sndPlayerDead);
+    }
     _ObjectHandle = collision_rectangle(x-OffX, y-OffY, x+OffX, y+OffY, objParentEnemy, false, true)
     if(_ObjectHandle != noone){
         if(Action == ActionRolling || Action == ActionJumping || Action == ActionSpindash || Action == ActionGlide

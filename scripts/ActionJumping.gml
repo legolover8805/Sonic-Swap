@@ -47,7 +47,7 @@
                 Gravity      = 0;
                 audio_play_sound(sndShieldActionFire, 1, false);
 
-                if(CameraLag == true){
+                if(CameraLag == true && global.Boss == false){
                     objCamera.CameraLock   = true;
                     objCamera.alarm[0]     = 16;
                 }

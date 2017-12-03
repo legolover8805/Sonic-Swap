@@ -30,7 +30,7 @@
             scrPlayerResetTrail();
             Action = ActionRolling;
 
-            if(CameraLag == true){
+            if(CameraLag == true && global.Boss == false){
                 objCamera.CameraLock   = true;
                 objCamera.alarm[0]     = 16;
             }    

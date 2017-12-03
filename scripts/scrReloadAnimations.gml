@@ -56,6 +56,8 @@
             
             scrAnimationSystemAddSimple("Fly", 0.3, sprS2SonicJog);
             scrAnimationSystemAddSimple("Glide", 0.3, sprS2SonicJog);
+            
+            scrAnimationSystemAdd("Victory", 0.25, sprSonicVictory, 5);
         }else{
             scrAnimationSystemAddSimple("Idle", 0.25, sprS2SuperSonicIdle);
             scrAnimationSystemAdd("CrouchDown", 0.25, sprS2SuperSonicCrouch, 3);
@@ -133,6 +135,7 @@
         
         scrAnimationSystemAdd("Transform", 0.3, sprS2TailsTransform,  13);
         scrAnimationSystemAddSimple("Corkscrew", 0, sprS2TailsCorkscrew);
+        scrAnimationSystemAdd("Victory", 0.25, sprTailsVictory, 19);
         
     }else if(CharacterId == consCharacterKnuckles){
         scrAnimationSystemAddSimple("Idle", 0., sprKnucklesIdle);
@@ -177,6 +180,7 @@
         scrAnimationSystemAdd("Transform", 0.3, sprKnucklesTransform,  13);
         scrAnimationSystemAddSimple("Corkscrew", 0, sprKnucklesCorkscrew);
         scrAnimationSystemAddSimple("Fly", 0.3, sprKnucklesJog);
+        scrAnimationSystemAdd("Victory", 0.25, sprKnucklesVictory, 14);
     } else if(CharacterId == consCharacterMetal){
             scrAnimationSystemAddSimple("Idle", 0, sprMSonicIdle);
             scrAnimationSystemAddSimple("IdleWait0", 0.17, sprMSonicWait);
@@ -220,4 +224,5 @@
             scrAnimationSystemAdd("Dashing", 0.5, sprMSonicDashing, 2);
             scrAnimationSystemAddRepeat("EndDashing", 0.25, sprMSonicEndDashing, false, 1, "Vulnerable");
             scrAnimationSystemAddSimple("Vulnerable", 0, sprMSonicVuln);
+            scrAnimationSystemAdd("Victory", 0.25, sprMSonicVictory, 1);
     }
