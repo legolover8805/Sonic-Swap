@@ -1,4 +1,4 @@
-    if(instance_exists(objParentEnemy) == false)
+    if(instance_exists(objParentEnemy) == false && instance_exists(objParentBoss) == false)
         exit;
 
     OffX = 9+(15*(Shield == consShieldInstashield))    

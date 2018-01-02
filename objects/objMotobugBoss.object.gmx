@@ -122,7 +122,7 @@
     if BossHit == true {
         sprite_index = sprMotobugHit;
         BossTimer += 1;
-        if BossTimer == 89 {
+        if BossTimer == 29 {
             BossHit = false;
             BossTimer = 0;
         }    
